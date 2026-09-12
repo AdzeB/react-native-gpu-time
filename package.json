@@ -1,0 +1,63 @@
+{
+  "name": "react-native-gpu-time",
+  "version": "0.1.0",
+  "description": "Offline date and schedule parsing for React Native with extensible language packs",
+  "license": "MIT",
+  "type": "module",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "react-native": "./dist/index.js",
+  "types": "./dist/types/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/types/index.d.ts",
+      "react-native": "./dist/index.js",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs",
+      "default": "./dist/index.js"
+    },
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "dist",
+    "LICENSE",
+    "README.md",
+    "MODEL_CARD.md",
+    "THIRD_PARTY_NOTICES.md",
+    "UPSTREAM.json",
+    "docs",
+    "CONTRIBUTING.md",
+    "VALIDATION.md"
+  ],
+  "sideEffects": false,
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "check": "tsc --noEmit",
+    "test": "vitest run",
+    "test:package": "node --test test/package*.test.mjs",
+    "verify": "npm run check && npm run build && npm test && npm run test:package",
+    "prepack": "npm run build",
+    "example:install": "npm pack && npm install --prefix example ./react-native-gpu-time-0.1.0.tgz"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.28.0",
+    "@babel/plugin-transform-unicode-property-regex": "^7.27.1",
+    "@js-temporal/polyfill": "0.5.1",
+    "@types/node": "^22.0.0",
+    "esbuild": "0.28.2",
+    "rrule": "2.8.1",
+    "typescript": "5.9.3",
+    "vitest": "4.1.11"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AdzeB/react-native-gpu-time.git"
+  },
+  "homepage": "https://github.com/AdzeB/react-native-gpu-time#readme",
+  "bugs": {
+    "url": "https://github.com/AdzeB/react-native-gpu-time/issues"
+  }
+}

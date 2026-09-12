@@ -1,0 +1,15 @@
+{
+  "repository": "https://github.com/arikchakma/gpu-time",
+  "commit": "119f28efdd376e68f269269ead7fb8be03c1f2f1",
+  "weightsSha256": "c69ab6c9be8ec854790c004b5d540dc6a41bececbacdbf34a4725de6b711d6d5",
+  "changes": [
+    "CPU-only execution and public backend type",
+    "Local compatibility helpers for timing and plain-object cloning",
+    "Replaced at and findLast calls with portable equivalents",
+    "Unicode property regular expressions lowered at build time",
+    "ESM and CommonJS packaging for Metro",
+    "Pluggable French, Spanish, and Simplified Chinese normalization packs",
+    "Public language-pack interface, tests, and contribution documentation",
+    "Mobile demo theme and English highlighting adapted from the upstream website"
+  ]
+}
