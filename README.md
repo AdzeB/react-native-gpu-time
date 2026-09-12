@@ -23,15 +23,19 @@ The Expo example uses New York time. These screenshots come from the running iOS
 
 ## Install
 
-Install the archive from the [v0.1.0 GitHub prerelease](https://github.com/AdzeB/react-native-gpu-time/releases/tag/v0.1.0) in your React Native or Expo app:
+Install from [npm](https://www.npmjs.com/package/react-native-gpu-time) in your React Native or Expo app:
 
 ```sh
-npm install https://github.com/AdzeB/react-native-gpu-time/releases/download/v0.1.0/react-native-gpu-time-0.1.0.tgz
+npm install react-native-gpu-time
 ```
 
-The package is distributed through GitHub Releases. It has not been published to npm.
+For the preview channel:
 
-To build the archive yourself, clone this repository, run `npm ci`, then `npm pack`.
+```sh
+npm install react-native-gpu-time@next
+```
+
+To build an archive yourself, clone this repository, run `npm ci`, then `npm pack`.
 
 ## Use it
 

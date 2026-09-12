@@ -27,4 +27,4 @@ The 13 device checks cover relative dates, overnight ranges, recurrence limits, 
 
 No physical-device latency, battery, memory, or frame-rate benchmark was performed. Simulator timings should not be presented as mobile performance results. Real-world language accuracy and native-speaker review remain unmeasured. Language packs support the documented vocabulary and patterns; they do not constitute a multilingual-trained model.
 
-The [GitHub Actions workflow](https://github.com/AdzeB/react-native-gpu-time/actions/workflows/ci.yml) verifies the package and exports the Expo example on every push and pull request. Consult its current run for hosted CI status. Installable archives are distributed through GitHub Releases; the package is not published to npm.
+The [GitHub Actions workflow](https://github.com/AdzeB/react-native-gpu-time/actions/workflows/ci.yml) verifies the package and exports the Expo example on every push and pull request. Consult its current run for hosted CI status. The package is published on [npm](https://www.npmjs.com/package/react-native-gpu-time). The `publish.yml` workflow handles future releases through npm trusted publishing.

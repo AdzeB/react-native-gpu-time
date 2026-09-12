@@ -40,7 +40,7 @@
     "test:package": "node --test test/package*.test.mjs",
     "verify": "npm run check && npm run build && npm test && npm run test:package",
     "prepack": "npm run build",
-    "example:install": "npm pack && npm install --prefix example ./react-native-gpu-time-0.1.0.tgz"
+    "example:install": "node scripts/install-example.mjs"
   },
   "devDependencies": {
     "@babel/core": "^7.28.0",
