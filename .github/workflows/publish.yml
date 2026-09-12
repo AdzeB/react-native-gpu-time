@@ -51,7 +51,7 @@ jobs:
           node --input-type=module <<'NODE'
           import { appendFileSync, readFileSync } from 'node:fs';
           import { join } from 'node:path';
-          const [archive] = JSON.parse(readFileSync(join(process.env.RUNNER_TEMP, 'npm-pack.json'), 'utf8'));
+          const [archive] = Object.values(JSON.parse(readFileSync(join(process.env.RUNNER_TEMP, 'npm-pack.json'), 'utf8')));
           appendFileSync(process.env.GITHUB_OUTPUT, `path=${join(process.env.RUNNER_TEMP, archive.filename)}\n`);
           NODE
       - name: Check the publish payload

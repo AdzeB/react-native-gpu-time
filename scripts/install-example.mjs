@@ -12,10 +12,13 @@ const run = (args, options = {}) =>
   });
 
 run(["run", "build"]);
-const [archive] = JSON.parse(
-  run(["pack", "--ignore-scripts", "--json"], {
-    encoding: "utf8",
-    stdio: ["inherit", "pipe", "inherit"],
-  }),
+// npm 11 returns an array; npm 12 keys the records by package name.
+const [archive] = Object.values(
+  JSON.parse(
+    run(["pack", "--ignore-scripts", "--json"], {
+      encoding: "utf8",
+      stdio: ["inherit", "pipe", "inherit"],
+    }),
+  ),
 );
 run(["install", "--prefix", "example", `./${archive.filename}`]);
